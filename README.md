@@ -23,8 +23,7 @@ If inserting multiple items takes **more than 3 seconds**, all inserted items ar
 - If total delay > `3s`, deletes all inserted records within the same transaction
 
 ---
-## Sequence Diagram
----
+
 ```mermaid
 sequenceDiagram
     participant Client
