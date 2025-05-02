@@ -37,7 +37,7 @@ This generates the executable JAR in the `target` folder.
 ### ▶️ Run the App
 
 ```bash
-java -jar target/spring-transaction-timeout-0.0.1-SNAPSHOT.jar
+java -jar target/demo-0.0.1-SNAPSHOT.jar
 ```
 
 ---
