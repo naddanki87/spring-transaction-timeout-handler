@@ -1,0 +1,5 @@
+com\colruyt\springtransaction\controller\SpringTrasactionController.class
+com\colruyt\springtransaction\entity\Item.class
+com\colruyt\springtransaction\repository\ItemRepository.class
+com\colruyt\springtransaction\service\ItemService.class
+com\colruyt\springtransaction\SpringTransactionApplication.class
