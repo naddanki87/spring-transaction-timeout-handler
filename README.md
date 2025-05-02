@@ -24,7 +24,7 @@ If inserting multiple items takes **more than 3 seconds**, all inserted items ar
 
 ---
 ## Sequence Diagram
-
+---
 ```mermaid
 sequenceDiagram
     participant Client
