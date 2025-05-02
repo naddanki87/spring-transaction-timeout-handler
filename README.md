@@ -23,7 +23,7 @@ If inserting multiple items takes **more than 3 seconds**, all inserted items ar
 - If total delay > `3s`, deletes all inserted records within the same transaction
 
 ---
-
+## Sequence Diagram
 
 ```mermaid
 sequenceDiagram
@@ -57,3 +57,41 @@ sequenceDiagram
     Database-->>ItemRepository: Items Deleted
     ItemService->>API: Return Success (No Records Persisted)
     Client-->>API: Response (Data Cleared)
+
+---
+## 📦 How to Build and Run
+
+### 🛠️ Build the JAR
+
+```bash
+mvn clean package
+```
+
+This generates the executable JAR in the `target` folder.
+
+### ▶️ Run the App
+
+```bash
+java -jar target/spring-transaction-timeout-0.0.1-SNAPSHOT.jar
+```
+
+---
+
+## 🌐 Useful URLs
+
+- **Swagger UI**: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)  
+- **H2 Console**: [http://localhost:8080/h2-console](http://localhost:8080/h2-console)  
+  - JDBC URL: `jdbc:h2:mem:testdb`
+
+---
+
+## 📁 Tech Stack
+
+- Java 17+
+- Spring Boot 3+
+- Spring Web + JPA
+- H2 Database
+- Swagger/OpenAPI
+- Maven
+
+---
