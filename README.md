@@ -62,6 +62,8 @@ When the annotated method is called, a transaction begins.
 If the method (and all its database operations) completes within 30 seconds, the transaction is committed (changes are saved).
 
 If the method takes longer than 30 seconds, the transaction is automatically rolled back (changes are discarded), and an exception is thrown.
+
+
 ---
 
 ## 📁 Tech Stack
