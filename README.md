@@ -48,6 +48,20 @@ java -jar target/demo-0.0.1-SNAPSHOT.jar
 - **H2 Console**: [http://localhost:8080/h2-console](http://localhost:8080/h2-console)  
   - JDBC URL: `jdbc:h2:mem:testdb`
 
+**Alternate Approach**:
+The @Transactional(timeout = 30) annotation is used in Java (commonly with Spring Framework) to manage the duration of a transaction. Here’s what it means and how it works:
+
+What Does It Do?
+Declares a Transaction: Marks a method or class so that its operations are executed within a database transaction.
+
+Sets a Timeout: The timeout = 30 part specifies that the transaction should not run longer than 30 seconds.
+
+How It Works
+When the annotated method is called, a transaction begins.
+
+If the method (and all its database operations) completes within 30 seconds, the transaction is committed (changes are saved).
+
+If the method takes longer than 30 seconds, the transaction is automatically rolled back (changes are discarded), and an exception is thrown.
 ---
 
 ## 📁 Tech Stack
